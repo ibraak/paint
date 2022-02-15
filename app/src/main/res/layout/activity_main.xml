@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/iconBar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundColor="@color/darkGray"
+        app:cornerRadius="16dp"
+        app:corners="all"
+        app:iconSize="25dp"
+        app:iconTint="@color/iconGray"
+        app:iconTintActive="@color/black"
+        app:indicatorColor="@color/gray"
+        app:indicatorRadius="3dp"
+        app:menu="@menu/main_menu"
+/>
+
+<LinearLayout
+    android:id="@+id/BottomBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:padding="8dp"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@id/iconBar"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/toolbar_background"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/imgRed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#F40000"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <ImageButton
+        android:id="@+id/imgGreen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#0E7E01"
+        android:layout_marginEnd="8dp"/>
+    <ImageButton
+        android:id="@+id/imgBlue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#0043CA"
+        android:layout_marginEnd="8dp"/>
+    <ImageButton
+        android:id="@+id/imgBlack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#000000"
+        android:layout_marginEnd="8dp"/>
+
+</LinearLayout>
+    <com.ibra.paintapplication.PaintView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/BottomBar"
+        android:layout_marginTop="-2dp" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itmPencil"
+        android:icon="@drawable/ic_pencil"
+        android:title="@string/empty"/>
+    <item
+        android:id="@+id/itmArrow"
+        android:icon="@drawable/ic_arrow"
+        android:title="@string/empty"
+        />
+    <item
+        android:id="@+id/itmSquare"
+        android:icon="@drawable/ic_square"
+        android:title="@string/empty"
+        />
+    <item
+        android:id="@+id/itmCircle"
+        android:icon="@drawable/ic_circle"
+        android:title="@string/empty"
+        />
+    <item
+        android:id="@+id/itmPaint"
+        android:icon="@drawable/ic_paint"
+        android:title="@string/empty"/>
+
+
+</menu>
